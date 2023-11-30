@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">listsimp</string>
+    <string name="txt1">Agregar</string>
+    <string name="txt2">Ingrese un Valor</string>
+</resources>
