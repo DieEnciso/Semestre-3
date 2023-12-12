@@ -1,1 +1,388 @@
+Main.xml
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar una actividad"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar actividades"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Actividad"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+
+MainActivity.Java
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button btnAgregar, btnMostrar, btnEliminar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        btnAgregar = findViewById(R.id.btnAgregar);
+        btnMostrar = findViewById(R.id.btnMostrar);
+        btnEliminar = findViewById(R.id.btnEliminar);
+
+        btnAgregar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AgregarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMostrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MostrarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnEliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, EliminarActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+}
+
+Activity_agregar.xml
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/fechayHoraActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha y Hora Actual"/>
+
+    <EditText
+        android:id="@+id/EdittextTituloAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"/>
+
+    <EditText
+        android:id="@+id/EdittextDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"/>
+
+    <Button
+        android:id="@+id/btncalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendario"/>
+
+    <TextView
+        android:id="@+id/TextviewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha: 00/00/0000"/>
+
+    <Button
+        android:id="@+id/btn_AgregarTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar tarea a la agenda"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+
+AgregarActivity.Java 
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class AgregarActivity extends AppCompatActivity {
+
+    private TextView fechaHoraActual, textViewFecha;
+    private EditText editTextTitulo, editTextDescripcion;
+    private Button btnCalendario, btnAgregarTarea;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_agregar);
+
+        fechaHoraActual = findViewById(R.id.fechayHoraActual);
+        textViewFecha = findViewById(R.id.TextviewFecha);
+        editTextTitulo = findViewById(R.id.EdittextTituloAgregar);
+        editTextDescripcion = findViewById(R.id.EdittextDescripcion);
+        btnCalendario = findViewById(R.id.btncalendario);
+        btnAgregarTarea = findViewById(R.id.btn_AgregarTarea);
+
+        btnCalendario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Código para abrir un DatePickerDialog y seleccionar una fecha
+            }
+        });
+
+        btnAgregarTarea.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Código para agregar la tarea a la lista enlazada
+            }
+        });
+    }
+}activity_mostrar.xml
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tituloMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de Tareas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <RecyclerView
+        android:id="@+id/recyclerViewMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver a la Pantalla Principal"/>
+
+</LinearLayout>
+
+MostrarActivity.Java
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
+
+public class MostrarActivity extends AppCompatActivity {
+
+    private RecyclerView recyclerViewMostrar;
+    private Button btnVolver;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_mostrar);
+
+        recyclerViewMostrar = findViewById(R.id.recyclerViewMostrar);
+        btnVolver = findViewById(R.id.btnVolver);
+
+        // Obtener la lista de tareas y configurar el adaptador
+        List<Tarea> listaTareas = obtenerListaDeTareas();
+        TareasAdapter adapter = new TareasAdapter(listaTareas);
+        recyclerViewMostrar.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewMostrar.setAdapter(adapter);
+
+        btnVolver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Código para volver a la pantalla principal
+                finish();
+            }
+        });
+    }
+
+    // Método ficticio para obtener la lista de tareas (debes implementarlo según tu lógica)
+    private List<Tarea> obtenerListaDeTareas() {
+        // Código para obtener la lista de tareas desde la lista enlazada
+        // Debes implementar esto según tu lógica de lista enlazada
+        return null;
+    }
+}
+
+Eliminar.xml
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tituloEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Tareas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <RecyclerView
+        android:id="@+id/recyclerViewEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Tarea"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnVolverEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver a la Pantalla Principal"/>
+
+</LinearLayout>
+
+EliminarActivity.Java
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
+
+public class EliminarActivity extends AppCompatActivity {
+
+    private RecyclerView recyclerViewEliminar;
+    private Button btnEliminar, btnVolverEliminar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_eliminar);
+
+        recyclerViewEliminar = findViewById(R.id.recyclerViewEliminar);
+        btnEliminar = findViewById(R.id.btnEliminar);
+        btnVolverEliminar = findViewById(R.id.btnVolverEliminar);
+
+        // Obtener la lista de tareas y configurar el adaptador
+        List<Tarea> listaTareas = obtenerListaDeTareas();
+        TareasAdapter adapter = new TareasAdapter(listaTareas);
+        recyclerViewEliminar.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewEliminar.setAdapter(adapter);
+
+        btnEliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Código para eliminar las tareas seleccionadas de la lista enlazada
+                // Puedes llamar a un método en tu lista enlazada para realizar la eliminación
+            }
+        });
+
+        btnVolverEliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Código para volver a la pantalla principal
+                finish();
+            }
+        });
+    }
+
+    // Método ficticio para obtener la lista de tareas (debes implementarlo según tu lógica)
+    private List<Tarea> obtenerListaDeTareas() {
+        // Código para obtener la lista de tareas desde la lista enlazada
+        // Debes implementar esto según tu lógica de lista enlazada
+        return null;
+    }
+}
+
+
+GlobalAgendaManager.java
+
+import java.util.LinkedList;
+
+public class GlobalAgendaManager {
+
+    private static final AgendaManager agendaManager = new AgendaManager();
+
+    public static AgendaManager getAgendaManager() {
+        return agendaManager;
+    }
+
+    public static class AgendaManager {
+        private LinkedList<Tarea> listaTareas = new LinkedList<>();
+
+        public void agregarTarea(String titulo, String descripcion, String fecha) {
+            Tarea nuevaTarea = new Tarea(titulo, descripcion, fecha);
+            listaTareas.add(nuevaTarea);
+        }
+
+        public void mostrarTareas() {
+            for (Tarea tarea : listaTareas) {
+                System.out.println("Título: " + tarea.titulo + ", Descripción: " + tarea.descripcion + ", Fecha: " + tarea.fecha);
+            }
+        }
+
+        public void eliminarTarea(int indice) {
+            if (indice >= 0 && indice < listaTareas.size()) {
+                listaTareas.remove(indice);
+            }
+        }
+
+        public LinkedList<Tarea> getListaTareas() {
+            return listaTareas;
+        }
+
+        private class Tarea {
+            public String titulo;
+            public String descripcion;
+            public String fecha;
+
+            public Tarea(String titulo, String descripcion, String fecha) {
+                this.titulo = titulo;
+                this.descripcion = descripcion;
+                this.fecha = fecha;
+            }
+        }
+    }
+}
 
