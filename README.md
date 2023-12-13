@@ -14,7 +14,12 @@ A continuación una Descripción Breve del Código.
 Descripción detallada del Desarrollo y funcionamiento de la Agenda.
 
              MainActivity.java: 
- Esta es la actividad principal de la aplicación. Tiene tres botones: -"Agregar una actividad" -"Mostrar actividades" -"Eliminar actividad" Cada botón inicia una actividad específica cuando se presiona.
+ Esta es la actividad principal de la aplicación. Tiene tres botones: 
+-"Agregar una actividad" 
+-"Mostrar actividades" 
+-"Eliminar actividad"
+Cada botón inicia una actividad específica cuando se presiona.
+
             AgregarActivity.java: 
  Esta actividad permite agregar una nueva tarea a la lista. Tiene campos para ingresar el título, la descripción y una opción para seleccionar la fecha de la tarea. 
 
