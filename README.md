@@ -5,7 +5,7 @@ para la Carrera de Ing en Informática impartida por el Ing Layonet Salvador Bue
      Martínez Velázquez Alan Josué     N° L221100115 
      Abigail Roque Gonzáles            N° L221100073 
      Ángel Diego Sosa Enciso           N° L221100094 
-     Saul Saavedra Ortega              N° L221100030
+     Saul Saavedra Ortega              N° L221100030.
 
     A continuación una Descripción Breve del Código:
 
