@@ -7,8 +7,7 @@ para la Carrera de Ing en Informática impartida por el Ing Layonet Salvador Bue
      Ángel Diego Sosa Enciso           N° L221100094 
      Saul Saavedra Ortega              N° L221100030.
 
-
-               A continuación una Descripción Breve del Código:
+       Acontinuación una Descripción Breve del Código:
 Es una App de Agenda para la gestión o Control de tareas diarias, en formato de Agenda editables por el usuario.
 
 Descripción detallada del Desarrollo y funcionamiento de la Agenda.
