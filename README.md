@@ -21,7 +21,7 @@ para la Carrera de Ing en Informática impartida por el Ing Layonet Salvador Bue
 Permite eliminar tareas seleccionadas de la lista. También contiene un botón para volver a la pantalla principal. GlobalAgendaManager.java: Define una clase AgendaManager que utiliza una lista enlazada para gestionar las tareas. Dentro de esta clase, se pueden agregar, mostrar y eliminar tareas. 
 
        COMENTARIOS FINALES: 
-       Profe se nos cerro el portal en Teams a Alana y Abi en la entrega y solo Diego pudo subir el repositorio a tiempo pero aquí están las ligas de los otros repositorios faltantes:
+       Profe se nos cerro el portal en Teams a Alan y Abi en la entrega y solo Diego pudo subir el repositorio a tiempo pero aquí están las ligas de los otros repositorios faltantes:
         
         Alan:   
   https://github.com/Tokersb/AplicacionAgenda?classId=bf33461a-f108-4bd0-adf6-36612ce7ca07&assignmentId=c2b2be32-b0bf-4f8a-adc1-07ea083aa73b&submissionId=03442a1f-4045-73bc-bd36-c7be8dd14ef4
