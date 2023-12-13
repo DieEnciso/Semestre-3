@@ -1,7 +1,7 @@
 Proyecto "Agenda APP" Desarrollado En Android Studio  con leguaje en Java, como Trabajo Final de la Asignatura de "Estructura de Datos",
 para la Carrera de Ing en Informática impartida por el Ing Layonet Salvador Buenrostro Pérez. 
 
-              APP Desarrollada en por: 
+              Desarrollado por: 
      Martínez Velázquez Alan Josué     N° L221100115 
      Abigail Roque Gonzáles            N° L221100073 
      Ángel Diego Sosa Enciso           N° L221100094 
