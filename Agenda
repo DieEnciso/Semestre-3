@@ -304,7 +304,7 @@ public class EliminarActivity extends AppCompatActivity {
         btnEliminar = findViewById(R.id.btnEliminar);
         btnVolverEliminar = findViewById(R.id.btnVolverEliminar);
 
-        // Obtener la lista de tareas y configurar el adaptador
+         // Obtener la lista de tareas y configurar el adaptador
         List<Tarea> listaTareas = obtenerListaDeTareas();
         TareasAdapter adapter = new TareasAdapter(listaTareas);
         recyclerViewEliminar.setLayoutManager(new LinearLayoutManager(this));
