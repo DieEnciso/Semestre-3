@@ -44,15 +44,15 @@ Las situaciónes furon la siguientes:
 
       Este repositorio real Final del Proyecto:
  
-https://github.com/Tokersb/AplicacionAgenda?classId=bf33461a-f108-4bd0-adf6-36612ce7ca07&assignmentId=c2b2be32-b0bf-4f8a-adc1-07ea083aa73b&submissionId=03442a1f-4045-73bc-bd36-c7be8dd14ef4 o también DieEnciso/Repositorios/Agenda:
+https://github.com/Tokersb/AplicacionAgenda?classId=bf33461a-f108-4bd0-adf6-36612ce7ca07&assignmentId=c2b2be32-b0bf-4f8a-adc1-07ea083aa73b&submissionId=03442a1f-4045-73bc-bd36-c7be8dd14ef4 o también DieEnciso/Repositorios/Agenda
 
 5.Aquí están las ligas de los repositorios faltantes: 
       
       Alan Líder del Epo:      
 
          https://github.com/Tokersb/AplicacionAgenda?classId=bf33461a-f108-4bd0-adf6-36612ce7ca07&assignmentId=c2b2be32-b0bf-4f8a-adc1-07ea083aa73b&submissionId=03442a1f-4045-73bc-bd36-c7be8dd14ef4
-      
- 
+
+
        Saul:   
   https://github.com/Saul20072001/CalendariodeActividades
   
