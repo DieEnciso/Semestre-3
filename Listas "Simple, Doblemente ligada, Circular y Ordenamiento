@@ -77,6 +77,6 @@ class Ordenamiento {
 public class MainActivity extends AppCompatActivity {
     // Aquí puedes implementar la lógica de la interfaz de usuario
     // con botones y acciones para interactuar con las diferentes listas y funciones de ordenamiento
-    // ...
+    // 
 }
 
