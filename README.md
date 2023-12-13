@@ -12,6 +12,7 @@ para la Carrera de Ing en Informática impartida por el Ing Layonet Salvador Bue
  Que s una App de Agenda para gestión o Control de tareas diarias editables por el usuario. (lenguaje utilizado es Java) Descripción detallada: 
  
  Y esta es una Descripcion detallada del Desarrollo y funcionamiento  de la APP.
+
              MainActivity.java: 
  Esta es la actividad principal de la aplicación. Tiene tres botones: -"Agregar una actividad" -"Mostrar actividades" -"Eliminar actividad" Cada botón inicia una actividad específica cuando se presiona.
             AgregarActivity.java: 
