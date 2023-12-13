@@ -50,14 +50,12 @@ Y nos ganó el tiempo en el proceso de arreglar el error END.
 https://github.com/Tokersb/AplicacionAgenda?classId=bf33461a-f108-4bd0-adf6-36612ce7ca07&assignmentId=c2b2be32-b0bf-4f8a-adc1-07ea083aa73b&submissionId=03442a1f-4045-73bc-bd36-c7be8dd14ef4 o también DieEnciso/Repositorios/Agenda
 
 5.Aquí están las ligas de los repositorios faltantes: 
-      
+     
       Alan Líder del Epo:      
-
-         https://github.com/Tokersb/AplicacionAgenda?classId=bf33461a-f108-4bd0-adf6-36612ce7ca07&assignmentId=c2b2be32-b0bf-4f8a-adc1-07ea083aa73b&submissionId=03442a1f-4045-73bc-bd36-c7be8dd14ef4
-
+https://github.com/Tokersb/AplicacionAgenda?classId=bf33461a-f108-4bd0-adf6-36612ce7ca07&assignmentId=c2b2be32-b0bf-4f8a-adc1-07ea083aa73b&submissionId=03442a1f-4045-73bc-bd36-c7be8dd14ef4
 
        Saul:   
-  https://github.com/Saul20072001/CalendariodeActividades
+https://github.com/Saul20072001/CalendariodeActividades
   
   Le agradecemos la atención y una disculpa por la demora pero fue trabajo en Equipo via Remoto por qué algunos trabajan después de la escuela.
 
