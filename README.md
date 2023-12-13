@@ -15,9 +15,9 @@ Descripción detallada del Desarrollo y funcionamiento de la Agenda.
 
              MainActivity.java: 
  Esta es la actividad principal de la aplicación. Tiene tres botones: 
--"Agregar una actividad" 
--"Mostrar actividades" 
--"Eliminar actividad"
+ "Agregar una actividad" 
+ "Mostrar actividades" 
+ "Eliminar actividad"
 Cada botón inicia una actividad específica cuando se presiona.
 
             AgregarActivity.java: 
@@ -34,17 +34,21 @@ Define una clase AgendaManager que utiliza una lista enlazada para gestionar las
 
 
             COMENTARIOS FINALES: 
-Profe,la situación fue la siguiente:
-1.No subimos a tiempo la liga del repositorio en el portal de Teams debido a que queríamos que volviera a corriera ya que el día de la entrega nos arrojaba el error ["zip END header not found"] al compilar cuando hicimos la última prueba. Y Diego Subió este repositorio mal e incompleto por las prisas. Ya que la agrego en una sub carpeta del 1er repositorio "Listas Simple" (Listsimp). No sabía que era 1 repositorio independiente por cada proyecto de Android Studio. Y nos ganó el tiempo en el proceso de arreglar el error END.
-2.Saul nose pudo agregar al equipo "ED 2023" en Teams. Sin embargo le mando msj informandole la situacion. 
+Profe.
+Las situaciónes furon la siguientes:
+1.No subimos a tiempo la liga del repositorio en el portal de Teams debido a que queríamos que volviera a correr ya que el día de la entrega nos arrojaba el error ["zip END header not found"] al compilar cuando hicimos la última prueba. Y Diego Subió este repositorio mal e incompleto por las prisas. Ya que la agrego en una sub carpeta del 1er repositorio "Listas Simple" (Listsimp) y solo le dejo agregar el código de Java manualmente y no todas las carpetas que exporta Android Studio. Ignoraba que cada repositorio debía de ser independiente. Y nos ganó el tiempo en el proceso de arreglar el error END.
+
+2.Saul no se pudo agregar al equipo "ED 2023" en Teams. Sin embargo le mando msj informandole la situacion. 
+
 3. En el caso de Abi se quedó sin compañeros de equipo, ya que varios de nuestro salón desertaron de la carrera. Por desgracia  miembros de su equipo y se quedó sola (Por eso nuestro equipos conforma 4 integrantes) de igual manera le mando msj por teams informando la situación.
-4. Este repositorio real Final del Proyecto:
 
-       DieEnciso/Repositorios/Agenda o también mediante la liga:
+      Este repositorio real Final del Proyecto:
+ 
+https://github.com/Tokersb/AplicacionAgenda?classId=bf33461a-f108-4bd0-adf6-36612ce7ca07&assignmentId=c2b2be32-b0bf-4f8a-adc1-07ea083aa73b&submissionId=03442a1f-4045-73bc-bd36-c7be8dd14ef4 o también DieEnciso/Repositorios/Agenda:
 
-
-       5.Aquí están las ligas de los repositorios faltantes:       
-Alan Líder del Epo:      
+5.Aquí están las ligas de los repositorios faltantes: 
+      
+      Alan Líder del Epo:      
 
          https://github.com/Tokersb/AplicacionAgenda?classId=bf33461a-f108-4bd0-adf6-36612ce7ca07&assignmentId=c2b2be32-b0bf-4f8a-adc1-07ea083aa73b&submissionId=03442a1f-4045-73bc-bd36-c7be8dd14ef4
       
