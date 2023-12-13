@@ -33,13 +33,16 @@ Define una clase AgendaManager que utiliza una lista enlazada para gestionar las
 
 
             COMENTARIOS FINALES: 
-Profe.
+Profesor,
 Las situaciónes furon la siguientes:
-1.No subimos a tiempo la liga del repositorio en el portal de Teams debido a que queríamos que volviera a correr ya que el día de la entrega nos arrojaba el error ["zip END header not found"] al compilar cuando hicimos la última prueba. Y Diego Subió este repositorio mal e incompleto por las prisas. Ya que la agrego en una sub carpeta del 1er repositorio "Listas Simple" (Listsimp) y solo le dejo agregar el código de Java manualmente y no todas las carpetas que exporta Android Studio. Ignoraba que cada repositorio debía de ser independiente. Y nos ganó el tiempo en el proceso de arreglar el error END.
 
-2.Saul no se pudo agregar al equipo "ED 2023" en Teams. Sin embargo le mando msj informandole la situacion. 
+1.No subimos a tiempo la liga del repositorio en el portal de Teams debido a que queríamos que volviera a correr ya que el día de la entrega nos arrojaba el error ["zip END header not found"] al compilar cuando hicimos la última prueba. Y Diego Subió este repositorio incompleto pero se equivocó por las prisas. 
+Ya que la agrego en una sub carpeta del 1er repositorio "Listas Simple" (Listsimp) y solo le dejo agregar el código de Java manualmente y no todas las carpetas que exporta Android Studio. Ignoraba que cada repositorio debía de ser independiente.
+ Y nos ganó el tiempo en el proceso de arreglar el error END.
 
-3. En el caso de Abi se quedó sin compañeros de equipo, ya que varios de nuestro salón desertaron de la carrera. Por desgracia  miembros de su equipo y se quedó sola (Por eso nuestro equipos conforma 4 integrantes) de igual manera le mando msj por teams informando la situación.
+ 2.Saul no se pudo agregar al equipo "ED 2023" en Teams. Sin embargo le mando msj informandole la situacion. 
+
+ 3. En el caso de Abi se quedó sin compañeros de equipo, ya que varios de nuestro salón desertaron de la carrera. Por desgracia  miembros de su equipo y se quedó sola (Por eso nuestro equipos conforma 4 integrantes) de igual manera le mando msj por teams informando la situación.
 
       Este repositorio real Final del Proyecto:
  
