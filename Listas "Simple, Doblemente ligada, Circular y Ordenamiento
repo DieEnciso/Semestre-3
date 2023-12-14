@@ -1,82 +1,95 @@
-// Para la lista simple
-class NodoSimple {
-    int valor;
-    NodoSimple siguiente;
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    public NodoSimple(int valor) {
-        this.valor = valor;
-        this.siguiente = null;
-    }
-}
+    <EditText
+        android:id="@+id/inputArray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese números separados por coma"
+        android:inputType="text"/>
 
-class ListaSimple {
-    NodoSimple cabeza;
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputArray"
+        android:text="Ordenar"/>
 
-    public ListaSimple() {
-        this.cabeza = null;
-    }
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSort"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
 
-    // Métodos para agregar, eliminar, mostrar y ordenar en la lista simple
-    // ...
-}
 
-// Para la lista doblemente ligada
-class NodoDoble {
-    int valor;
-    NodoDoble siguiente;
-    NodoDoble anterior;
+--------
 
-    public NodoDoble(int valor) {
-        this.valor = valor;
-        this.siguiente = null;
-        this.anterior = null;
-    }
-}
 
-class ListaDoble {
-    NodoDoble cabeza;
+// esto van en MainActivity.java
 
-    public ListaDoble() {
-        this.cabeza = null;
-    }
-
-    // Métodos para agregar, eliminar, mostrar y ordenar en la lista doblemente ligada
-    // ...
-}
-
-// Para la lista circular
-class NodoCircular {
-    int valor;
-    NodoCircular siguiente;
-
-    public NodoCircular(int valor) {
-        this.valor = valor;
-        this.siguiente = null;
-    }
-}
-
-class ListaCircular {
-    NodoCircular cabeza;
-
-    public ListaCircular() {
-        this.cabeza = null;
-    }
-
-    // Métodos para agregar, eliminar, mostrar y ordenar en la lista circular
-    // ...
-}
-
-// Funciones de ordenamiento
-class Ordenamiento {
-    public static void ordenar(int[] array) {
-        // Algoritmo de ordenamiento (por ejemplo, Bubble Sort, Quick Sort, etc.)
-        // ...
-    }
-}
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
-    // Aquí puedes implementar la lógica de la interfaz de usuario
-    // con botones y acciones para interactuar con las diferentes listas y funciones de ordenamiento
-    // 
-}
+    private EditText inputArray;
+    private TextView tvResult;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        inputArray = findViewById(R.id.inputArray);
+        tvResult = findViewById(R.id.tvResult);
+
+        Button btnSort = findViewById(R.id.btnSort);
+        btnSort.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sortArray();
+            }
+        });
+    }
+
+    private void sortArray() {
+        String input = inputArray.getText().toString().trim();
+
+        if (!input.isEmpty()) {
+            String[] strArray = input.split(",");
+            int[] intArray = new int[strArray.length];
+
+            // Validar y convertir los valores ingresados a enteros
+            boolean validInput = true;
+            for (int i = 0; i < strArray.length; i++) {
+                try {
+                    intArray[i] = Integer.parseInt(strArray[i].trim());
+                } catch (NumberFormatException e) {
+                    validInput = false;
+                    break;
+                }
+            }
+
+            if (validInput) {
+                // Utilizar Arrays.sort() para ordenar el arreglo
+                Arrays.sort(intArray);
+
+                // Mostrar el arreglo ordenado en el TextView
+                String sortedArray = Arrays.toString(intArray);
+                tvResult.setText("Array ordenado: " + sortedArray);
+            } else {
+                tvResult.setText("Ingrese solo números válidos separados por coma.");
+            }
+        } else {
+            tvResult.setText("Ingrese al menos un número para ordenar.");
+        }
+    }
+}
