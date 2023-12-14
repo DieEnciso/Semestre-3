@@ -8,13 +8,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingrese números separados por coma"
-        android:inputType="text"/>
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"  <!-- Agregado: cambia el teclado a uno numérico y muestra "Hecho" -->
+        android:imeActionLabel="Hecho"/> <!-- Agregado: cambia el texto del botón de acción -->
 
     <Button
         android:id="@+id/btnSort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/inputArray"
+        android:layout_centerHorizontal="true"  <!-- Agregado: centrar el botón horizontalmente -->
+        android:layout_marginTop="16dp"  <!-- Agregado: espacio superior -->
         android:text="Ordenar"/>
 
     <TextView
@@ -22,14 +26,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/btnSort"
+        android:layout_centerHorizontal="true"  <!-- Agregado: centrar el TextView horizontalmente -->
         android:layout_marginTop="20dp"/>
 </RelativeLayout>
 
 
---------
+     --------   C O M E N T A R I O S     --------
 
 
-// esto van en MainActivity.java
+    // esto van en MainActivity.java
 
 import android.os.Bundle;
 import android.view.View;
@@ -66,9 +71,8 @@ public class MainActivity extends AppCompatActivity {
         if (!input.isEmpty()) {
             String[] strArray = input.split(",");
             int[] intArray = new int[strArray.length];
-
-            // Validar y convertir los valores ingresados a enteros
             boolean validInput = true;
+
             for (int i = 0; i < strArray.length; i++) {
                 try {
                     intArray[i] = Integer.parseInt(strArray[i].trim());
@@ -79,10 +83,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (validInput) {
-                // Utilizar Arrays.sort() para ordenar el arreglo
                 Arrays.sort(intArray);
-
-                // Mostrar el arreglo ordenado en el TextView
                 String sortedArray = Arrays.toString(intArray);
                 tvResult.setText("Array ordenado: " + sortedArray);
             } else {
